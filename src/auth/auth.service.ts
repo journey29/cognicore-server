@@ -79,6 +79,7 @@ export class AuthService {
       httpOnly: true,
       expires: expiresIn,
       secure: true,
+      domain: 'localhost',
       sameSite: 'none'
     })
   }
@@ -88,7 +89,8 @@ export class AuthService {
       httpOnly: true,
       secure: true,
       sameSite: 'none',
-      expires: new Date(0)
+      expires: new Date(0),
+      domain: 'localhost'
     })
   }
 

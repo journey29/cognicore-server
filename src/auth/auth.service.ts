@@ -77,6 +77,7 @@ export class AuthService {
 
     res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
       expires: expiresIn,
+      sameSite: 'none',
       secure: true
     })
   }
@@ -84,6 +85,7 @@ export class AuthService {
   removeRefreshToken(res: Response) {
     res.cookie(this.REFRESH_TOKEN_NAME, '', {
       secure: true,
+      sameSite: 'none',
       expires: new Date(0)
     })
   }

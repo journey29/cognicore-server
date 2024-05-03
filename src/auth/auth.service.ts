@@ -78,6 +78,7 @@ export class AuthService {
     res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
       expires: expiresIn,
       sameSite: 'none',
+      httpOnly: true,
       secure: true
     })
   }
@@ -86,6 +87,7 @@ export class AuthService {
     res.cookie(this.REFRESH_TOKEN_NAME, '', {
       secure: true,
       sameSite: 'none',
+      httpOnly: true,
       expires: new Date(0)
     })
   }

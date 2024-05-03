@@ -152,7 +152,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\Богдан\\Desktop\\zasluga-backend\\prisma\\generated\\output",
+      "value": "C:\\Users\\Богдан\\Desktop\\backend\\backend\\prisma\\generated\\output",
       "fromEnvVar": null
     },
     "config": {
@@ -179,6 +179,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {

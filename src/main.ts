@@ -9,7 +9,7 @@ async function bootstrap() {
   app.enableCors({
     credentials: true,
     origin: ['https://cognicore-client.vercel.app'],
-    exposedHeaders: ['set-cookies', 'Access-Control-Allow-Origin']
+    exposedHeaders: ['set-cookies']
   })
 
   await app.listen(process.env.PORT!, '0.0.0.0')

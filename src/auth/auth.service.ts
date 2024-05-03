@@ -79,8 +79,7 @@ export class AuthService {
       httpOnly: true,
       expires: expiresIn,
       secure: true,
-      sameSite: 'none',
-      domain: process.env.CLIENT_ENV
+      sameSite: 'none'
     })
   }
 
@@ -89,8 +88,7 @@ export class AuthService {
       httpOnly: true,
       secure: true,
       expires: new Date(0),
-      sameSite: 'none',
-      domain: process.env.CLIENT_ENV
+      sameSite: 'none'
     })
   }
 

@@ -80,7 +80,7 @@ export class AuthService {
       expires: expiresIn,
       secure: true,
       domain: 'localhost',
-      sameSite: 'none'
+      sameSite: 'lax'
     })
   }
 
@@ -88,7 +88,7 @@ export class AuthService {
     res.cookie(this.REFRESH_TOKEN_NAME, '', {
       httpOnly: true,
       secure: true,
-      sameSite: 'none',
+      sameSite: 'lax',
       expires: new Date(0),
       domain: 'localhost'
     })

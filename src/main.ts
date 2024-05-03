@@ -8,7 +8,7 @@ async function bootstrap() {
   app.use(cookieParser())
   app.enableCors({
     credentials: true,
-    origin: [process.env.CLIENT_URL || 'https://cognicore-client.vercel.app'],
+    origin: ['https://cognicore-client.vercel.app'],
     exposedHeaders: 'set-cookies'
   })
 

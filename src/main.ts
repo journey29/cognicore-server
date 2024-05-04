@@ -8,7 +8,7 @@ async function bootstrap() {
   app.use(cookieParser())
   app.enableCors({
     credentials: true,
-    origin: [process.env.CLIENT_URL! || '*'],
+    origin: ['https://cognicore-client.onrender.com'],
     exposedHeaders: ['set-cookies']
   })
 

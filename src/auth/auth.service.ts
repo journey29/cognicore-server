@@ -78,7 +78,7 @@ export class AuthService {
     res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
       expires: expiresIn,
       sameSite: 'lax',
-      domain: process.env.CLIENT_URL,
+      domain: 'https://cognicore-client.vercel.app',
       httpOnly: true,
       secure: true
     })
@@ -88,7 +88,7 @@ export class AuthService {
     res.cookie(this.REFRESH_TOKEN_NAME, '', {
       secure: true,
       sameSite: 'lax',
-      domain: process.env.CLIENT_URL,
+      domain: 'https://cognicore-client.vercel.app',
       httpOnly: true,
       expires: new Date(0)
     })

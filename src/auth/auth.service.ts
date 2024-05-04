@@ -78,6 +78,7 @@ export class AuthService {
     res.cookie(this.REFRESH_TOKEN_NAME, refreshToken, {
       expires: expiresIn,
       sameSite: 'none',
+      domain: 'https://cognicore-server-production.up.railway.app',
       httpOnly: true,
       secure: true
     })
@@ -87,6 +88,7 @@ export class AuthService {
     res.cookie(this.REFRESH_TOKEN_NAME, '', {
       secure: true,
       sameSite: 'none',
+      domain: 'https://cognicore-server-production.up.railway.app',
       httpOnly: true,
       expires: new Date(0)
     })

@@ -1,3 +1,5 @@
+## I don't know how to deploy this shit to work with cookies without incurring the cost of a custom domain, so please go through the steps below. Thanks!
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>

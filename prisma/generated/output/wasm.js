@@ -127,22 +127,6 @@ exports.Prisma.UserScalarFieldEnum = {
   emailVerified: 'emailVerified'
 };
 
-exports.Prisma.ConversationScalarFieldEnum = {
-  id: 'id',
-  type: 'type',
-  userId: 'userId',
-  createdAt: 'createdAt'
-};
-
-exports.Prisma.MessageScalarFieldEnum = {
-  id: 'id',
-  role: 'role',
-  url: 'url',
-  content: 'content',
-  conversationId: 'conversationId',
-  userId: 'userId'
-};
-
 exports.Prisma.VerificationTokenScalarFieldEnum = {
   id: 'id',
   email: 'email',
@@ -168,8 +152,6 @@ exports.Prisma.NullsOrder = {
 
 exports.Prisma.ModelName = {
   User: 'User',
-  Conversation: 'Conversation',
-  Message: 'Message',
   VerificationToken: 'VerificationToken'
 };
 
